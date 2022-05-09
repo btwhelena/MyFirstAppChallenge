@@ -1,10 +1,3 @@
-//
-//  ContentView.swift
-//  MyFirstAppChallenge
-//
-//  Created by Helena Oliveira on 09/05/22.
-//
-
 import SwiftUI
 
 struct ContentView: View {
