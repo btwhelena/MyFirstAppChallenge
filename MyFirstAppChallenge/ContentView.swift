@@ -32,7 +32,7 @@ struct ContentView: View {
                     //Salmon button
                     NavigationLink(
                         destination: {
-                                 Salmon()
+                                 SalmonSushis()
                                 .navigationBarBackButtonHidden(true)
                                 .navigationBarHidden(true)
                         },
@@ -59,7 +59,7 @@ struct ContentView: View {
                     //Shrimp button
                     NavigationLink(
                         destination: {
-                                 Shrimp()
+                                 ShrimpSushis()
                                 .navigationBarBackButtonHidden(true)
                                 .navigationBarHidden(true)
                         },
@@ -86,7 +86,7 @@ struct ContentView: View {
                     //Tuna button
                     NavigationLink(
                         destination: {
-                                 Tuna()
+                                 TunaSushis()
                                 .navigationBarBackButtonHidden(true)
                                 .navigationBarHidden(true)
                         },
@@ -112,49 +112,17 @@ struct ContentView: View {
                 } // fim HStack.
                 Text("Popular sushis")
                        .font(.system(size: 24).bold()).frame(maxWidth: 320, alignment: .topLeading)
+                
                 HStack{
-                    CardView()
-                    CardView()
+                    CardView(sushi: Sushi(image: "Salmon Roll", name: "Salmon Roll", description: "Nori, gohan and fresh salmon. A classic and delicious combination.", price: 2))
+                    CardView(sushi: Sushi(image: "Shrimp Nigiri", name: "Shrimp Nirigi", description: "Gohan and shrimp. XXXXXXXXX", price: 3))
                 }
+                Spacer()
                 
             } // fim Vstack
         }
     }
 }
-struct CardView: View{
-    var body: some View {
-        ZStack {
-            RoundedRectangle(cornerRadius: cornerRadius)
-                .strokeBorder(Color.gray, lineWidth: 1)
-                .frame(width: cardAndImageWidth, height: cardHeight)
-                .background(Color.white)
-            VStack(alignment: .leading, spacing: 10) {
-                Image("Salmon icon")
-                    .resizable()
-                    .aspectRatio(contentMode: .fill)
-                    .frame(width: cardAndImageWidth, height: imageHeight)
-                    .clipped()
-                LazyVStack(alignment: .leading, spacing: 2) {
-                    Text("Sushi name")
-                        .font(.custom("Avenir", size: 14))
-                        .fontWeight(.bold)
-                    Text("R$XX,XX")
-                        .font(.custom("Avenir", size: 12))
-                        .foregroundColor(Color.gray)
-                }
-                .padding(.horizontal,12)
-                .padding(.bottom,11)
-            }
-            .frame(width: cardAndImageWidth, height: cardHeight)
-            .cornerRadius(cornerRadius)
-        }
-    }
-    private let cardAndImageWidth: CGFloat = 170
-    private let cardHeight: CGFloat = 174
-    private let imageHeight: CGFloat = 116
-    private let cornerRadius: CGFloat = 5
-}
-
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()

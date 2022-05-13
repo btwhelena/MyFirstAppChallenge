@@ -9,9 +9,17 @@
 /* Begin PBXBuildFile section */
 		0D23AB6E282D2CB30061DB29 /* AllSushis.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D23AB6D282D2CB30061DB29 /* AllSushis.swift */; };
 		0D23AB70282D2FCC0061DB29 /* Cart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D23AB6F282D2FCC0061DB29 /* Cart.swift */; };
-		0D23AB72282D3B390061DB29 /* Salmon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D23AB71282D3B390061DB29 /* Salmon.swift */; };
-		0D23AB74282D3B440061DB29 /* Tuna.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D23AB73282D3B440061DB29 /* Tuna.swift */; };
-		0D23AB76282D3B4E0061DB29 /* Shrimp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D23AB75282D3B4E0061DB29 /* Shrimp.swift */; };
+		0D23AB72282D3B390061DB29 /* SalmonRoll.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D23AB71282D3B390061DB29 /* SalmonRoll.swift */; };
+		0D23AB78282E746E0061DB29 /* SalmonNigiri.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D23AB77282E746D0061DB29 /* SalmonNigiri.swift */; };
+		0D23AB7A282E74880061DB29 /* ShrimpNigiri.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D23AB79282E74880061DB29 /* ShrimpNigiri.swift */; };
+		0D23AB7C282E749C0061DB29 /* TunaNigiri.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D23AB7B282E749C0061DB29 /* TunaNigiri.swift */; };
+		0D23AB80282E74BE0061DB29 /* TunaRoll.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D23AB7F282E74BE0061DB29 /* TunaRoll.swift */; };
+		0D23AB82282E87060061DB29 /* SushiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D23AB81282E87060061DB29 /* SushiView.swift */; };
+		0D23AB84282E99F00061DB29 /* SalmonSushis.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D23AB83282E99F00061DB29 /* SalmonSushis.swift */; };
+		0D23AB86282E9A080061DB29 /* ShrimpSushis.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D23AB85282E9A080061DB29 /* ShrimpSushis.swift */; };
+		0D23AB88282E9A200061DB29 /* TunaSushis.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D23AB87282E9A200061DB29 /* TunaSushis.swift */; };
+		0D23AB8A282E9D680061DB29 /* Sushi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D23AB89282E9D680061DB29 /* Sushi.swift */; };
+		0D23AB8C282E9F810061DB29 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D23AB8B282E9F810061DB29 /* CardView.swift */; };
 		0DB9C847282947DC00AB99A7 /* MyFirstAppChallengeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DB9C846282947DC00AB99A7 /* MyFirstAppChallengeApp.swift */; };
 		0DB9C849282947DC00AB99A7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DB9C848282947DC00AB99A7 /* ContentView.swift */; };
 		0DB9C84B282947DF00AB99A7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0DB9C84A282947DF00AB99A7 /* Assets.xcassets */; };
@@ -21,9 +29,17 @@
 /* Begin PBXFileReference section */
 		0D23AB6D282D2CB30061DB29 /* AllSushis.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllSushis.swift; sourceTree = "<group>"; };
 		0D23AB6F282D2FCC0061DB29 /* Cart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cart.swift; sourceTree = "<group>"; };
-		0D23AB71282D3B390061DB29 /* Salmon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Salmon.swift; sourceTree = "<group>"; };
-		0D23AB73282D3B440061DB29 /* Tuna.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tuna.swift; sourceTree = "<group>"; };
-		0D23AB75282D3B4E0061DB29 /* Shrimp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shrimp.swift; sourceTree = "<group>"; };
+		0D23AB71282D3B390061DB29 /* SalmonRoll.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalmonRoll.swift; sourceTree = "<group>"; };
+		0D23AB77282E746D0061DB29 /* SalmonNigiri.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalmonNigiri.swift; sourceTree = "<group>"; };
+		0D23AB79282E74880061DB29 /* ShrimpNigiri.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShrimpNigiri.swift; sourceTree = "<group>"; };
+		0D23AB7B282E749C0061DB29 /* TunaNigiri.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TunaNigiri.swift; sourceTree = "<group>"; };
+		0D23AB7F282E74BE0061DB29 /* TunaRoll.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TunaRoll.swift; sourceTree = "<group>"; };
+		0D23AB81282E87060061DB29 /* SushiView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SushiView.swift; sourceTree = "<group>"; };
+		0D23AB83282E99F00061DB29 /* SalmonSushis.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalmonSushis.swift; sourceTree = "<group>"; };
+		0D23AB85282E9A080061DB29 /* ShrimpSushis.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShrimpSushis.swift; sourceTree = "<group>"; };
+		0D23AB87282E9A200061DB29 /* TunaSushis.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TunaSushis.swift; sourceTree = "<group>"; };
+		0D23AB89282E9D680061DB29 /* Sushi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sushi.swift; sourceTree = "<group>"; };
+		0D23AB8B282E9F810061DB29 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		0DB9C843282947DC00AB99A7 /* MyFirstAppChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyFirstAppChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0DB9C846282947DC00AB99A7 /* MyFirstAppChallengeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyFirstAppChallengeApp.swift; sourceTree = "<group>"; };
 		0DB9C848282947DC00AB99A7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -62,10 +78,18 @@
 			isa = PBXGroup;
 			children = (
 				0DB9C846282947DC00AB99A7 /* MyFirstAppChallengeApp.swift */,
+				0D23AB81282E87060061DB29 /* SushiView.swift */,
 				0DB9C848282947DC00AB99A7 /* ContentView.swift */,
-				0D23AB71282D3B390061DB29 /* Salmon.swift */,
-				0D23AB73282D3B440061DB29 /* Tuna.swift */,
-				0D23AB75282D3B4E0061DB29 /* Shrimp.swift */,
+				0D23AB8B282E9F810061DB29 /* CardView.swift */,
+				0D23AB89282E9D680061DB29 /* Sushi.swift */,
+				0D23AB87282E9A200061DB29 /* TunaSushis.swift */,
+				0D23AB85282E9A080061DB29 /* ShrimpSushis.swift */,
+				0D23AB71282D3B390061DB29 /* SalmonRoll.swift */,
+				0D23AB83282E99F00061DB29 /* SalmonSushis.swift */,
+				0D23AB77282E746D0061DB29 /* SalmonNigiri.swift */,
+				0D23AB7F282E74BE0061DB29 /* TunaRoll.swift */,
+				0D23AB79282E74880061DB29 /* ShrimpNigiri.swift */,
+				0D23AB7B282E749C0061DB29 /* TunaNigiri.swift */,
 				0D23AB6D282D2CB30061DB29 /* AllSushis.swift */,
 				0D23AB6F282D2FCC0061DB29 /* Cart.swift */,
 				0DB9C84A282947DF00AB99A7 /* Assets.xcassets */,
@@ -152,13 +176,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D23AB8A282E9D680061DB29 /* Sushi.swift in Sources */,
 				0D23AB6E282D2CB30061DB29 /* AllSushis.swift in Sources */,
-				0D23AB74282D3B440061DB29 /* Tuna.swift in Sources */,
+				0D23AB78282E746E0061DB29 /* SalmonNigiri.swift in Sources */,
+				0D23AB88282E9A200061DB29 /* TunaSushis.swift in Sources */,
+				0D23AB8C282E9F810061DB29 /* CardView.swift in Sources */,
+				0D23AB7C282E749C0061DB29 /* TunaNigiri.swift in Sources */,
 				0DB9C849282947DC00AB99A7 /* ContentView.swift in Sources */,
-				0D23AB72282D3B390061DB29 /* Salmon.swift in Sources */,
+				0D23AB72282D3B390061DB29 /* SalmonRoll.swift in Sources */,
+				0D23AB80282E74BE0061DB29 /* TunaRoll.swift in Sources */,
+				0D23AB82282E87060061DB29 /* SushiView.swift in Sources */,
 				0DB9C847282947DC00AB99A7 /* MyFirstAppChallengeApp.swift in Sources */,
 				0D23AB70282D2FCC0061DB29 /* Cart.swift in Sources */,
-				0D23AB76282D3B4E0061DB29 /* Shrimp.swift in Sources */,
+				0D23AB84282E99F00061DB29 /* SalmonSushis.swift in Sources */,
+				0D23AB7A282E74880061DB29 /* ShrimpNigiri.swift in Sources */,
+				0D23AB86282E9A080061DB29 /* ShrimpSushis.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

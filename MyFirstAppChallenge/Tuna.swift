@@ -1,10 +1,3 @@
-//
-//  Tuna.swift
-//  MyFirstAppChallenge
-//
-//  Created by Helena Oliveira on 12/05/22.
-//
-
 import SwiftUI
 
 struct Tuna: View {
