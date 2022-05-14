@@ -20,10 +20,12 @@ struct CardView: View {
                     Text(sushi.name)
                         .font(.system(size: 16))
                         .foregroundColor(Color.gray)
+                        .padding(.bottom,5)
                     
                     Text(sushi.price.formatted(.currency(code: "BRL")))
                         .font(.system(size: 20))
                         .fontWeight(.bold)
+                        .padding(.bottom,10)
                     
                     NavigationLink(
                         destination: {
@@ -35,7 +37,7 @@ struct CardView: View {
                                 Text("Details")
                                     .font(.system(size: 16)).bold()
                                     .foregroundColor(Color.black)
-                                    .padding(8)
+                                    .padding(10)
                                     .opacity(1.0)
                                     .overlay(
                                                 RoundedRectangle(cornerRadius: 20)
