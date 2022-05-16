@@ -1,12 +1,11 @@
 import SwiftUI
 
 struct CardView: View {
-    
     let sushi: Sushi
     
     var body: some View {
         ZStack {
-            RoundedRectangle(cornerRadius: cornerRadius)
+            RoundedRectangle(cornerRadius: 20)
                 .strokeBorder(Color.gray, lineWidth: 1)
                 .frame(width: cardAndImageWidth, height: cardHeight)
                 .background(Color.white)
@@ -29,7 +28,7 @@ struct CardView: View {
                     
                     NavigationLink(
                         destination: {
-                            SushiView(sushi: Sushi(image: sushi.image, name: sushi.name, description: sushi.description, price: sushi.price))
+                            SushiView(sushi: Sushi(image: sushi.image, name: sushi.name, description: sushi.description, quantity: sushi.quantity, price: sushi.price))
 
                         },
                         label: {

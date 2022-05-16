@@ -12,7 +12,7 @@ struct ContentView: View {
                         
                     NavigationLink(
                         destination: {
-                            Cart()
+                            CartView()
                         },
                         label: {
                             HStack {
@@ -108,8 +108,8 @@ struct ContentView: View {
                        .font(.system(size: 24).bold()).frame(maxWidth: 320, alignment: .topLeading)
                 
                 HStack{
-                    CardView(sushi: Sushi(image: "Salmon Roll", name: "Salmon Roll", description: "Nori, gohan and fresh salmon. A classic and delicious combination.", price: 2))
-                    CardView(sushi: Sushi(image: "Shrimp Nigiri", name: "Shrimp Nirigi", description: "Gohan and shrimp. XXXXXXXXX", price: 3))
+                    CardView(sushi: Sushi(image: "Salmon Roll", name: "Salmon Roll", description: "Nori, gohan and fresh salmon. A classic and delicious combination.", quantity: 1, price: 2))
+                    CardView(sushi: Sushi(image: "Shrimp Nigiri", name: "Shrimp Nirigi", description: "Gohan and shrimp. XXXXXXXXX", quantity: 1, price: 3))
                 }
                 
                 NavigationLink(

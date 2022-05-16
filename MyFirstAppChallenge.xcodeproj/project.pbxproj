@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D14821C2832798A005F7C68 /* CartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D14821B2832798A005F7C68 /* CartView.swift */; };
 		0D23AB6E282D2CB30061DB29 /* AllSushis.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D23AB6D282D2CB30061DB29 /* AllSushis.swift */; };
 		0D23AB70282D2FCC0061DB29 /* Cart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D23AB6F282D2FCC0061DB29 /* Cart.swift */; };
-		0D23AB72282D3B390061DB29 /* SalmonRoll.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D23AB71282D3B390061DB29 /* SalmonRoll.swift */; };
 		0D23AB82282E87060061DB29 /* SushiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D23AB81282E87060061DB29 /* SushiView.swift */; };
 		0D23AB84282E99F00061DB29 /* SalmonSushis.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D23AB83282E99F00061DB29 /* SalmonSushis.swift */; };
 		0D23AB86282E9A080061DB29 /* ShrimpSushis.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D23AB85282E9A080061DB29 /* ShrimpSushis.swift */; };
@@ -23,9 +23,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0D14821B2832798A005F7C68 /* CartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartView.swift; sourceTree = "<group>"; };
 		0D23AB6D282D2CB30061DB29 /* AllSushis.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllSushis.swift; sourceTree = "<group>"; };
 		0D23AB6F282D2FCC0061DB29 /* Cart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cart.swift; sourceTree = "<group>"; };
-		0D23AB71282D3B390061DB29 /* SalmonRoll.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalmonRoll.swift; sourceTree = "<group>"; };
 		0D23AB81282E87060061DB29 /* SushiView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SushiView.swift; sourceTree = "<group>"; };
 		0D23AB83282E99F00061DB29 /* SalmonSushis.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalmonSushis.swift; sourceTree = "<group>"; };
 		0D23AB85282E9A080061DB29 /* ShrimpSushis.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShrimpSushis.swift; sourceTree = "<group>"; };
@@ -70,16 +70,16 @@
 			isa = PBXGroup;
 			children = (
 				0DB9C846282947DC00AB99A7 /* MyFirstAppChallengeApp.swift */,
-				0D23AB81282E87060061DB29 /* SushiView.swift */,
-				0DB9C848282947DC00AB99A7 /* ContentView.swift */,
-				0D23AB8B282E9F810061DB29 /* CardView.swift */,
 				0D23AB89282E9D680061DB29 /* Sushi.swift */,
+				0D23AB8B282E9F810061DB29 /* CardView.swift */,
+				0D23AB81282E87060061DB29 /* SushiView.swift */,
+				0D23AB6D282D2CB30061DB29 /* AllSushis.swift */,
 				0D23AB87282E9A200061DB29 /* TunaSushis.swift */,
 				0D23AB85282E9A080061DB29 /* ShrimpSushis.swift */,
-				0D23AB71282D3B390061DB29 /* SalmonRoll.swift */,
 				0D23AB83282E99F00061DB29 /* SalmonSushis.swift */,
-				0D23AB6D282D2CB30061DB29 /* AllSushis.swift */,
+				0DB9C848282947DC00AB99A7 /* ContentView.swift */,
 				0D23AB6F282D2FCC0061DB29 /* Cart.swift */,
+				0D14821B2832798A005F7C68 /* CartView.swift */,
 				0DB9C84A282947DF00AB99A7 /* Assets.xcassets */,
 				0DB9C84C282947DF00AB99A7 /* Preview Content */,
 			);
@@ -169,7 +169,7 @@
 				0D23AB88282E9A200061DB29 /* TunaSushis.swift in Sources */,
 				0D23AB8C282E9F810061DB29 /* CardView.swift in Sources */,
 				0DB9C849282947DC00AB99A7 /* ContentView.swift in Sources */,
-				0D23AB72282D3B390061DB29 /* SalmonRoll.swift in Sources */,
+				0D14821C2832798A005F7C68 /* CartView.swift in Sources */,
 				0D23AB82282E87060061DB29 /* SushiView.swift in Sources */,
 				0DB9C847282947DC00AB99A7 /* MyFirstAppChallengeApp.swift in Sources */,
 				0D23AB70282D2FCC0061DB29 /* Cart.swift in Sources */,

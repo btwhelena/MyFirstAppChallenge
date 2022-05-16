@@ -1,13 +1,17 @@
-import SwiftUI
+import Foundation
 
-struct Cart: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+class Cart{
+    var products: [Sushi] = []
+    var total: Int = 0
+    
+    func addToCart(product: Sushi) {
+        products.append(product)
+        total += product.price
     }
-}
-
-struct Cart_Previews: PreviewProvider {
-    static var previews: some View {
-        Cart()
+    
+    func removeFromCart(product: Sushi) {
+        products = products.filter { $0.id != product.id }
+        total -= product.price
     }
+    
 }
