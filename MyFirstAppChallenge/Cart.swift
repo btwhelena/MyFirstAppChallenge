@@ -1,17 +1,16 @@
 import Foundation
 
-class Cart{
+struct Cart {
+    
     var products: [Sushi] = []
-    var total: Int = 0
     
-    func addToCart(product: Sushi) {
+    mutating func addToCart(product: Sushi) {
         products.append(product)
-        total += product.price
     }
+}
+
+class Cart2: ObservableObject {
     
-    func removeFromCart(product: Sushi) {
-        products = products.filter { $0.id != product.id }
-        total -= product.price
-    }
+    @Published var products: [Sushi] = []
     
 }

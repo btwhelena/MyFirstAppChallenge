@@ -1,10 +1,10 @@
 import Foundation
 
-struct Sushi {
+struct Sushi: Identifiable {
     let image: String
     let name: String
     let description: String
-    let quantity: Int
+    var quantity: Int
     let price: Int
     var id = UUID()
 }

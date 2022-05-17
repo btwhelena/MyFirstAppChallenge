@@ -4,9 +4,12 @@ struct ContentView: View {
 
     @State private var searchText = ""
     
+    @StateObject private var car = Cart2()
+    
     var body: some View {
         NavigationView{
             VStack(spacing: 30){
+                
                 HStack(spacing: 10){
                     Text("Welcome!").font(.system(size: 24).bold()).frame(maxWidth: 275, alignment: .topLeading)
                         
@@ -19,6 +22,14 @@ struct ContentView: View {
                                 Image(systemName: "cart")
                                     .font(.system(.title))
                                     .foregroundColor(Color.black)
+                            }
+                            .overlay(alignment: .bottomTrailing) {
+                                Text("\(car.products.count)")
+                                    .foregroundColor(.white)
+                                    .background {
+                                        Circle()
+                                            .aspectRatio(1, contentMode: .fill)
+                                    }
                             }
                         }
                     )
@@ -135,6 +146,7 @@ struct ContentView: View {
                 
             } // fim Vstack
         }
+        .environmentObject(car)
     }
 }
 struct ContentView_Previews: PreviewProvider {

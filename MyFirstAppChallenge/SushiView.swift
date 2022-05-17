@@ -1,16 +1,47 @@
 import SwiftUI
 
 struct SushiView: View {
+    
+    @EnvironmentObject var car: Cart2
+    
     @State var count = 1
     let sushi: Sushi
     
     var body: some View {
+        VStack{
+            HStack(spacing: 10){
+                Text("Details").font(.system(size: 24).bold()).frame(maxWidth: 275, alignment: .topLeading)
+                    
+                NavigationLink(
+                    destination: {
+                        CartView()
+                    },
+                    label: {
+                        HStack {
+                            Image(systemName: "cart")
+                                .font(.system(.title))
+                                .foregroundColor(Color.black)
+                        }
+                        .overlay(alignment: .bottomTrailing) {
+                            Text("\(car.products.count)")
+                                .foregroundColor(.white)
+                                .background {
+                                    Circle()
+                                        .aspectRatio(1, contentMode: .fill)
+                                }
+                        }
+                    }
+                )
+            } // fim Hstack
+            Spacer()
+            
         ZStack {
             RoundedRectangle(cornerRadius: cornerRadius)
                 .strokeBorder(Color.gray, lineWidth: 1)
                 .frame(width: cardAndImageWidth, height: cardHeight)
                 .background(Color.white)
             VStack(alignment: .leading, spacing: 10) {
+                
                 Image(sushi.image)
                     .resizable()
                     .aspectRatio(contentMode: .fit)
@@ -40,8 +71,7 @@ struct SushiView: View {
 
                                 count -= 1
                             }
-                            //cart.addToCart(product: sushi)
-                            
+
                             
                         }) {
                             
@@ -77,7 +107,11 @@ struct SushiView: View {
                         
                         Spacer(minLength: 0)
                         
-                        Button(action: {}) {
+                        Button(action: {
+                            let order = Sushi(image: sushi.image, name: sushi.name, description: sushi.description, quantity: count, price: sushi.price)
+                            car.products.append(order)
+                            
+                        }) {
                             
                             Text("Add to cart")
                                 .font(.system(size: 16)).bold()
@@ -99,6 +133,8 @@ struct SushiView: View {
             .cornerRadius(cornerRadius)
             
         }//fim Zstack
+            Spacer()
+        }
     }
     private let cardAndImageWidth: CGFloat = 300
     private let cardHeight: CGFloat = 500

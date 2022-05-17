@@ -1,10 +1,9 @@
 import SwiftUI
 
-struct CardView: View {
-    
+struct SushiOnCart: View {
     let sushi: Sushi
-    
     var body: some View {
+        
         ZStack {
             RoundedRectangle(cornerRadius: 20)
                 .strokeBorder(Color.gray, lineWidth: 1)
@@ -30,7 +29,7 @@ struct CardView: View {
                     NavigationLink(
                         destination: {
                             SushiView(sushi: Sushi(image: sushi.image, name: sushi.name, description: sushi.description, quantity: sushi.quantity, price: sushi.price))
-
+                            
                         },
                         label: {
                             HStack{
@@ -40,13 +39,13 @@ struct CardView: View {
                                     .padding(10)
                                     .opacity(1.0)
                                     .overlay(
-                                                RoundedRectangle(cornerRadius: 20)
-                                                    .stroke(Color.black, lineWidth: 1.5)
-                                            )
+                                        RoundedRectangle(cornerRadius: 20)
+                                            .stroke(Color.black, lineWidth: 1.5)
+                                    )
                             }
                         }
                     )
-                   
+                    
                 }//fim Lazy Vstack
                 .padding(.horizontal,12)
                 .padding(.bottom,11)
@@ -55,9 +54,11 @@ struct CardView: View {
             .cornerRadius(cornerRadius)
             
         }//fim Zstack
+        
     }
-    private let cardAndImageWidth: CGFloat = 170
+    private let cardAndImageWidth: CGFloat = 5
     private let cardHeight: CGFloat = 300
-    private let imageHeight: CGFloat = 150
+    private let imageHeight: CGFloat = 50
     private let cornerRadius: CGFloat = 5
+    
 }

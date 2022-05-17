@@ -8,8 +8,8 @@ struct TunaSushis: View {
                     .font(.system(size: 24).bold()).frame(maxWidth: 320, alignment: .topLeading)
                 
                 HStack(spacing:10){
-                    CardView(sushi: Sushi(image: "Tuna Roll", name: "Tuna Roll", description: "Gohan and shrimp. XXXXXXXXX", quantity: 1, price: 1))
-                    CardView(sushi: Sushi(image: "Tuna Nigiri", name: "Tuna Nigiri", description: "Gohan and shrimp. XXXXXXXXX", quantity: 1, price: 3))
+                    CardView(sushi: Sushi(image: "Tuna Roll", name: "Tuna Roll", description: "Gohan, nori and tuna. XXXXXXXXX. 4pcs.", quantity: 1, price: 4))
+                    CardView(sushi: Sushi(image: "Tuna Nigiri", name: "Tuna Nigiri", description: "Only gohan and tuna. XXXXXXXXX. 4pcs.", quantity: 1, price: 6))
                 }
                 Spacer()
             }

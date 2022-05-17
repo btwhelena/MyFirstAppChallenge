@@ -1,8 +1,23 @@
 import SwiftUI
 
 struct CartView: View {
+    
+    @EnvironmentObject var car: Cart2
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        
+        VStack{
+
+            Text("Your cart").font(.system(size: 24).bold()).frame(maxWidth: 275, alignment: .topLeading)
+            List(car.products) { sushi in
+                HStack {
+                    Text(sushi.name)
+                    Spacer()
+                    Text("\(sushi.quantity)")
+                }
+                
+            }
+        } //fim vstack
     }
 }
 
