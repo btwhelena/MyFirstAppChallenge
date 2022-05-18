@@ -9,7 +9,8 @@ struct CardView: View {
             RoundedRectangle(cornerRadius: 20)
                 .strokeBorder(Color.gray, lineWidth: 1)
                 .frame(width: cardAndImageWidth, height: cardHeight)
-                .background(Color.white)
+                .shadow(color:Color.black.opacity(0.4),radius: 1, x: 0, y: 2)
+
             VStack(alignment: .leading, spacing: 10) {
                 Image(sushi.image)
                     .resizable()
@@ -42,6 +43,7 @@ struct CardView: View {
                                     .overlay(
                                                 RoundedRectangle(cornerRadius: 20)
                                                     .stroke(Color.black, lineWidth: 1.5)
+                                                    .shadow(color:Color.black.opacity(0.4),radius: 1, x: 0, y: 2)
                                             )
                             }
                         }
@@ -55,6 +57,7 @@ struct CardView: View {
             .cornerRadius(cornerRadius)
             
         }//fim Zstack
+        
     }
     private let cardAndImageWidth: CGFloat = 170
     private let cardHeight: CGFloat = 300

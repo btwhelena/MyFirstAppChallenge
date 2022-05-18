@@ -28,6 +28,7 @@ struct SushiView: View {
                                 .background {
                                     Circle()
                                         .aspectRatio(1, contentMode: .fill)
+                                        .foregroundColor(.black)
                                 }
                         }
                     }
@@ -39,7 +40,7 @@ struct SushiView: View {
             RoundedRectangle(cornerRadius: cornerRadius)
                 .strokeBorder(Color.gray, lineWidth: 1)
                 .frame(width: cardAndImageWidth, height: cardHeight)
-                .background(Color.white)
+                .shadow(color:Color.black.opacity(0.4),radius: 1, x: 0, y: 2)
             VStack(alignment: .leading, spacing: 10) {
                 
                 Image(sushi.image)
@@ -77,9 +78,9 @@ struct SushiView: View {
                             
                             Image(systemName: "minus")
                                 .font(.system(size: 15))
-                                .foregroundColor(Color.red)
+                                .foregroundColor(Color.black)
                                 .padding()
-                                .background(Color.white)
+                                .background(Color.brown.opacity(0.2))
                                 .clipShape(Circle())
                                 .shadow(color: Color.black.opacity(0.1), radius: 5, x: 0, y: 5)
                         }
@@ -97,9 +98,9 @@ struct SushiView: View {
                             
                             Image(systemName: "plus")
                                 .font(.system(size: 15))
-                                .foregroundColor(Color.red)
+                                .foregroundColor(Color.black)
                                 .padding()
-                                .background(Color.white)
+                                .background(Color.brown.opacity(0.2))
                                 .clipShape(Circle())
                                 .shadow(color: Color.black.opacity(0.1), radius: 5, x: 0, y: 5)
                         }
@@ -121,6 +122,7 @@ struct SushiView: View {
                                 .overlay(
                                             RoundedRectangle(cornerRadius: 20)
                                                 .stroke(Color.black, lineWidth: 1.5)
+                                                .shadow(color:Color.black.opacity(0.4),radius: 6, x: 0, y: 2)
                                         )
                         }.padding(.trailing, 10)
                     }
@@ -134,7 +136,12 @@ struct SushiView: View {
             
         }//fim Zstack
             Spacer()
-        }
+        }.background(
+            LinearGradient(gradient: Gradient(colors: [.brown.opacity(0.15), .brown.opacity(0.2), .brown.opacity(0.3)]), startPoint: .top, endPoint: .bottom)
+        .ignoresSafeArea()
+                .aspectRatio(contentMode: .fill)
+        )
+
     }
     private let cardAndImageWidth: CGFloat = 300
     private let cardHeight: CGFloat = 500

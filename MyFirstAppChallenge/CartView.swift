@@ -18,11 +18,17 @@ struct CartView: View {
                 
             }
         } //fim vstack
+        .background(
+            LinearGradient(gradient: Gradient(colors: [.brown.opacity(0.15), .brown.opacity(0.2), .brown.opacity(0.3)]), startPoint: .top, endPoint: .bottom)
+        .ignoresSafeArea()
+                .aspectRatio(contentMode: .fill)
+        )
     }
 }
 
 struct CartView_Previews: PreviewProvider {
     static var previews: some View {
         CartView()
+            .environmentObject(Cart2())
     }
 }

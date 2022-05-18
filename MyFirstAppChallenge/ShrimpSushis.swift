@@ -12,6 +12,11 @@ struct ShrimpSushis: View {
                 }
                 Spacer()
             }
+            .background(
+                LinearGradient(gradient: Gradient(colors: [.brown.opacity(0.15), .brown.opacity(0.2), .brown.opacity(0.3)]), startPoint: .top, endPoint: .bottom)
+            .ignoresSafeArea()
+                    .aspectRatio(contentMode: .fill)
+            )
         
     }
 }

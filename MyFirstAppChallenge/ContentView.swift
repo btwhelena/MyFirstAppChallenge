@@ -11,7 +11,7 @@ struct ContentView: View {
             VStack(spacing: 30){
                 
                 HStack(spacing: 10){
-                    Text("Welcome!").font(.system(size: 24).bold()).frame(maxWidth: 275, alignment: .topLeading)
+                    Text("Welcome!").font(.system(size: 24).bold()).frame(maxWidth: 275, alignment: .topLeading).shadow(radius: 1.2, x: 0.5, y: 0.5)
                         
                     NavigationLink(
                         destination: {
@@ -29,6 +29,8 @@ struct ContentView: View {
                                     .background {
                                         Circle()
                                             .aspectRatio(1, contentMode: .fill)
+                                            .foregroundColor(.black)
+
                                     }
                             }
                         }
@@ -36,7 +38,7 @@ struct ContentView: View {
                 } // fim Hstack
                 
              Text("Ingredients")
-                    .font(.system(size: 24).bold()).frame(maxWidth: 320, alignment: .topLeading)
+                    .font(.system(size: 24).bold()).frame(maxWidth: 320, alignment: .topLeading).shadow(radius: 1.2, x: 0.5, y: 0.5)
                 
                 HStack(spacing: 30){
                     
@@ -56,7 +58,8 @@ struct ContentView: View {
                                     .opacity(1.0)
                                     .overlay(
                                                 RoundedRectangle(cornerRadius: 20)
-                                                    .stroke(Color.black, lineWidth: 1.5)
+                                                    .strokeBorder(Color.gray, lineWidth: 1)
+                                                    .shadow(color:Color.black.opacity(0.4),radius: 1, x: 0, y: 2)
                                             )
                                 Text("Salmon")
                                     .font(.system(size: 20))
@@ -81,7 +84,8 @@ struct ContentView: View {
                                     .opacity(1.0)
                                     .overlay(
                                                 RoundedRectangle(cornerRadius: 20)
-                                                    .stroke(Color.black, lineWidth: 1.5)
+                                                    .strokeBorder(Color.gray, lineWidth: 1)
+                                                    .shadow(color:Color.black.opacity(0.4),radius: 1, x: 0, y: 2)
                                             )
                                 Text("Shrimp")
                                     .font(.system(size: 20))
@@ -106,7 +110,8 @@ struct ContentView: View {
                                     .opacity(1.0)
                                     .overlay(
                                                 RoundedRectangle(cornerRadius: 20)
-                                                    .stroke(Color.black, lineWidth: 1.5)
+                                                    .strokeBorder(Color.gray, lineWidth: 1)
+                                                    .shadow(color:Color.black.opacity(0.4),radius: 1, x: 0, y: 2)
                                             )
                                 Text("Tuna")
                                     .font(.system(size: 20))
@@ -116,7 +121,7 @@ struct ContentView: View {
                     )
                 } // fim HStack.
                 Text("Popular sushis")
-                       .font(.system(size: 24).bold()).frame(maxWidth: 320, alignment: .topLeading)
+                       .font(.system(size: 24).bold()).frame(maxWidth: 320, alignment: .topLeading).shadow(radius: 1.2, x: 0.5, y: 0.5)
                 
                 HStack{
                     CardView(sushi: Sushi(image: "Salmon Roll", name: "Salmon Roll", description: "Nori, gohan and fresh salmon. A classic and delicious combination.", quantity: 1, price: 2))
@@ -137,17 +142,27 @@ struct ContentView: View {
                                 .overlay(
                                             RoundedRectangle(cornerRadius: 20)
                                                 .stroke(Color.black, lineWidth: 1.5)
-                                        )
+                                                .shadow(color:Color.black.opacity(0.4),radius: 1, x: 0, y: 2)
+                                                
+                                )
                                 
                         } //fim Vstack
+
                     }
                 )
                 Spacer()
                 
             } // fim Vstack
+            .background(
+                LinearGradient(gradient: Gradient(colors: [.brown.opacity(0.15), .brown.opacity(0.2), .brown.opacity(0.3)]), startPoint: .top, endPoint: .bottom)
+            .ignoresSafeArea()
+                    .aspectRatio(contentMode: .fill)
+            )
+
         }
         .environmentObject(car)
     }
+
 }
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
