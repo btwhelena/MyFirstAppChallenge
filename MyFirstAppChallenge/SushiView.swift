@@ -79,10 +79,12 @@ struct SushiView: View {
                             Image(systemName: "minus")
                                 .font(.system(size: 15))
                                 .foregroundColor(Color.black)
-                                .padding()
-                                .background(Color.brown.opacity(0.2))
-                                .clipShape(Circle())
-                                .shadow(color: Color.black.opacity(0.1), radius: 5, x: 0, y: 5)
+                                .frame(width: 40, height: 40)
+                                .background {
+                                    Circle()
+                                        .fill(Color.brown.opacity(0.2))
+                                        .shadow(color: Color.black.opacity(0.1), radius: 5, x: 0, y: 5)
+                                }
                         }
                         
                         //number of items
@@ -99,10 +101,13 @@ struct SushiView: View {
                             Image(systemName: "plus")
                                 .font(.system(size: 15))
                                 .foregroundColor(Color.black)
-                                .padding()
-                                .background(Color.brown.opacity(0.2))
-                                .clipShape(Circle())
-                                .shadow(color: Color.black.opacity(0.1), radius: 5, x: 0, y: 5)
+                                .frame(width: 40, height: 40)
+                                .background {
+                                    Circle()
+                                        .fill(Color.brown.opacity(0.2))
+                                        .shadow(color: Color.black.opacity(0.1), radius: 5, x: 0, y: 5)
+                                }
+
                         }
                         // add to cart...
                         

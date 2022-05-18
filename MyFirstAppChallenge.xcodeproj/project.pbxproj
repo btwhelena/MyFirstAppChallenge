@@ -16,6 +16,8 @@
 		0D23AB88282E9A200061DB29 /* TunaSushis.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D23AB87282E9A200061DB29 /* TunaSushis.swift */; };
 		0D23AB8A282E9D680061DB29 /* Sushi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D23AB89282E9D680061DB29 /* Sushi.swift */; };
 		0D23AB8C282E9F810061DB29 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D23AB8B282E9F810061DB29 /* CardView.swift */; };
+		0DB534DA2835392300C24712 /* PaymentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DB534D92835392300C24712 /* PaymentView.swift */; };
+		0DB534DC2835396B00C24712 /* ConfirmationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DB534DB2835396B00C24712 /* ConfirmationView.swift */; };
 		0DB9C847282947DC00AB99A7 /* MyFirstAppChallengeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DB9C846282947DC00AB99A7 /* MyFirstAppChallengeApp.swift */; };
 		0DB9C849282947DC00AB99A7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DB9C848282947DC00AB99A7 /* ContentView.swift */; };
 		0DB9C84B282947DF00AB99A7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0DB9C84A282947DF00AB99A7 /* Assets.xcassets */; };
@@ -32,6 +34,8 @@
 		0D23AB87282E9A200061DB29 /* TunaSushis.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TunaSushis.swift; sourceTree = "<group>"; };
 		0D23AB89282E9D680061DB29 /* Sushi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sushi.swift; sourceTree = "<group>"; };
 		0D23AB8B282E9F810061DB29 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		0DB534D92835392300C24712 /* PaymentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentView.swift; sourceTree = "<group>"; };
+		0DB534DB2835396B00C24712 /* ConfirmationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmationView.swift; sourceTree = "<group>"; };
 		0DB9C843282947DC00AB99A7 /* MyFirstAppChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyFirstAppChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0DB9C846282947DC00AB99A7 /* MyFirstAppChallengeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyFirstAppChallengeApp.swift; sourceTree = "<group>"; };
 		0DB9C848282947DC00AB99A7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -73,11 +77,13 @@
 				0D23AB89282E9D680061DB29 /* Sushi.swift */,
 				0D23AB8B282E9F810061DB29 /* CardView.swift */,
 				0D23AB81282E87060061DB29 /* SushiView.swift */,
+				0DB534D92835392300C24712 /* PaymentView.swift */,
 				0D23AB6D282D2CB30061DB29 /* AllSushis.swift */,
 				0D23AB87282E9A200061DB29 /* TunaSushis.swift */,
 				0D23AB85282E9A080061DB29 /* ShrimpSushis.swift */,
 				0D23AB83282E99F00061DB29 /* SalmonSushis.swift */,
 				0DB9C848282947DC00AB99A7 /* ContentView.swift */,
+				0DB534DB2835396B00C24712 /* ConfirmationView.swift */,
 				0D23AB6F282D2FCC0061DB29 /* Cart.swift */,
 				0D14821B2832798A005F7C68 /* CartView.swift */,
 				0DB9C84A282947DF00AB99A7 /* Assets.xcassets */,
@@ -165,6 +171,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				0D23AB8A282E9D680061DB29 /* Sushi.swift in Sources */,
+				0DB534DC2835396B00C24712 /* ConfirmationView.swift in Sources */,
+				0DB534DA2835392300C24712 /* PaymentView.swift in Sources */,
 				0D23AB6E282D2CB30061DB29 /* AllSushis.swift in Sources */,
 				0D23AB88282E9A200061DB29 /* TunaSushis.swift in Sources */,
 				0D23AB8C282E9F810061DB29 /* CardView.swift in Sources */,

@@ -59,5 +59,6 @@ struct AllSushis: View {
 struct AllSushis_Previews: PreviewProvider {
     static var previews: some View {
         AllSushis()
+            .environmentObject(Cart2())
     }
 }
