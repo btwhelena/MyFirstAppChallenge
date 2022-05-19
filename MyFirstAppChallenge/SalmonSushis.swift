@@ -8,19 +8,29 @@ struct SalmonSushis: View {
                     .font(.system(size: 24).bold()).frame(maxWidth: 320, alignment: .topLeading)
                 
                 HStack(spacing:10){
-                    CardView(sushi: Sushi(image: "Salmon Roll", name: "Salmon Roll", description: "Nori, gohan and fresh salmon. A classic and delicious combination. 4pcs.", quantity: 1, price: 4))
-                    CardView(sushi: Sushi(image: "Salmon and Genger Roll", name: "Salmon and Genger Roll", description: "Nori, gohan, genger and fresh salmon. A classic and delicious combination. 4pcs.", quantity: 1, price: 6))
+                    CardView(sushi: Sushi(image: "Salmon Roll", name: "Salmon Roll", description: "Nori, gohan and fresh salmon. 4pcs.", quantity: 1, price: 4))
+                    CardView(sushi: Sushi(image: "Salmon and Genger Roll", name: "Salmon and Genger Roll", description: "Nori, gohan, genger and fresh salmon.  4pcs.", quantity: 1, price: 6))
                 }
                 
                 HStack(spacing:10){
-                    CardView(sushi: Sushi(image: "Salmon Nigiri", name: "Salmon Nigiri", description: "Only gohan and salmon. XXXXXXXXX 4pcs.", quantity: 1, price: 8))
+                    CardView(sushi: Sushi(image: "Salmon Nigiri", name: "Salmon Nigiri", description: "Only gohan and fresh salmon. 4pcs.", quantity: 1, price: 8))
                 }
                 Spacer()
             }
             .background(
-                LinearGradient(gradient: Gradient(colors: [.brown.opacity(0.15), .brown.opacity(0.2), .brown.opacity(0.3)]), startPoint: .top, endPoint: .bottom)
-            .ignoresSafeArea()
-                    .aspectRatio(contentMode: .fill)
+                LinearGradient(
+                    gradient:
+                        Gradient(
+                            colors: [
+                                Color(red: 248/255, green: 240/255, blue: 229/255),
+                                Color(red: 237/255, green: 224/255, blue: 212/255),
+                                Color(red: 234/255, green: 214/255, blue: 195/255)
+                            ]
+                        ),
+                    startPoint: .top, endPoint: .bottom
+                )
+                .ignoresSafeArea(edges: [.top, .bottom])
+                .aspectRatio(contentMode: .fill)
             )
     }
 }
